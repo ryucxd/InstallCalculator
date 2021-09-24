@@ -61,7 +61,7 @@ namespace InstallCalculator
                 panels = Convert.ToInt32(txtPanels.Text);
 
             if (radioOver2Hours.Checked == true)
-                travelCost = 500;
+                travelCost = 550;
             else
                 travelCost = 400;
 
@@ -74,7 +74,7 @@ namespace InstallCalculator
             singleIncludingSR1andSR2WithPanelTotal = ((travelCost / 3) * singleIncludingSR1andSR2WithPanel * 1.3);
             doubleIncludingSR1AndSR2WithPanelTotal = ((travelCost / 2 * doubleIncludingSR1AndSR2WithPanel) * 1.3);
             singleSR3AndSR3WithPanelsTotal = ((travelCost / 3) * singleSR3AndSR3WithPanels * 1.5);
-            doubleSR3AndSR3WithPanelsTotal = ((travelCost / 2) * doubleSR3AndSR3WithPanels * 1.5);
+            doubleSR3AndSR3WithPanelsTotal = ((travelCost / 2) * doubleSR3AndSR3WithPanels *2.25);
 
 
 
@@ -99,8 +99,8 @@ namespace InstallCalculator
             total = (singleIncludingSR1AndSR2Total + doubleIncludingSR1AndSR2Total + singleIncludingSR1andSR2WithPanelTotal + doubleIncludingSR1AndSR2WithPanelTotal + singleSR3AndSR3WithPanelsTotal + doubleSR3AndSR3WithPanelsTotal + panelsTotal) * multiplyValue;
             if (radioOver2Hours.Checked == true)
             {
-                if (total < 750)
-                    total = 750;
+                if (total < 800)
+                    total = 800;
             }
             if (total < 500)
                 total = 500;
