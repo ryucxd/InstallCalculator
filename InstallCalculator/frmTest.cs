@@ -16,6 +16,7 @@ namespace InstallCalculator
         {
             InitializeComponent();
             radioUpTo2hours.Checked = true;
+            txtWarning.BackColor = System.Drawing.Color.Transparent;
             //this.Icon = Properties.Resources.
         }
 
@@ -93,9 +94,9 @@ namespace InstallCalculator
 
             double total = 0, multiplyValue = 0;
             if (radioOver2Hours.Checked == true)
-                multiplyValue = 1.85;
+                multiplyValue = 1.45;
             else
-                multiplyValue = 1.85;
+                multiplyValue = 1.45;
             total = (singleIncludingSR1AndSR2Total + doubleIncludingSR1AndSR2Total + singleIncludingSR1andSR2WithPanelTotal + doubleIncludingSR1AndSR2WithPanelTotal + singleSR3AndSR3WithPanelsTotal + doubleSR3AndSR3WithPanelsTotal + panelsTotal) * multiplyValue;
             if (radioOver2Hours.Checked == true)
             {
