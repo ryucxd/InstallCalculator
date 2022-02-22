@@ -60,6 +60,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtDoubleIncludingSR1AndSR2WithPanelTotal = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtWarning = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -71,7 +72,6 @@
             this.txtPanelTotal = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
-            this.txtWarning = new System.Windows.Forms.Label();
             this.grpTravel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -172,7 +172,6 @@
             // 
             // txtDoubleSR3AndSR3WithPanels
             // 
-            this.txtDoubleSR3AndSR3WithPanels.Enabled = false;
             this.txtDoubleSR3AndSR3WithPanels.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoubleSR3AndSR3WithPanels.Location = new System.Drawing.Point(172, 46);
             this.txtDoubleSR3AndSR3WithPanels.Name = "txtDoubleSR3AndSR3WithPanels";
@@ -183,7 +182,6 @@
             // 
             // txtSingleSR3AndSR3WithPanels
             // 
-            this.txtSingleSR3AndSR3WithPanels.Enabled = false;
             this.txtSingleSR3AndSR3WithPanels.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSingleSR3AndSR3WithPanels.Location = new System.Drawing.Point(54, 46);
             this.txtSingleSR3AndSR3WithPanels.Name = "txtSingleSR3AndSR3WithPanels";
@@ -222,7 +220,6 @@
             // 
             // label11
             // 
-            this.label11.Enabled = false;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(54, 69);
             this.label11.Name = "label11";
@@ -233,7 +230,6 @@
             // 
             // txtSingleSR3AndSR3WithPanelsTotal
             // 
-            this.txtSingleSR3AndSR3WithPanelsTotal.Enabled = false;
             this.txtSingleSR3AndSR3WithPanelsTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSingleSR3AndSR3WithPanelsTotal.Location = new System.Drawing.Point(54, 85);
             this.txtSingleSR3AndSR3WithPanelsTotal.Name = "txtSingleSR3AndSR3WithPanelsTotal";
@@ -243,7 +239,6 @@
             // 
             // label12
             // 
-            this.label12.Enabled = false;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(172, 69);
             this.label12.Name = "label12";
@@ -254,7 +249,6 @@
             // 
             // txtDoubleSR3AndSR3WithPanelsTotal
             // 
-            this.txtDoubleSR3AndSR3WithPanelsTotal.Enabled = false;
             this.txtDoubleSR3AndSR3WithPanelsTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoubleSR3AndSR3WithPanelsTotal.Location = new System.Drawing.Point(172, 85);
             this.txtDoubleSR3AndSR3WithPanelsTotal.Name = "txtDoubleSR3AndSR3WithPanelsTotal";
@@ -387,7 +381,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtWarning);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.txtSingleSR3AndSR3WithPanels);
@@ -404,9 +397,21 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "SR3 / SR4 / FLOOD";
             // 
+            // txtWarning
+            // 
+            this.txtWarning.BackColor = System.Drawing.Color.Transparent;
+            this.txtWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtWarning.ForeColor = System.Drawing.Color.DarkRed;
+            this.txtWarning.Location = new System.Drawing.Point(23, 608);
+            this.txtWarning.Name = "txtWarning";
+            this.txtWarning.Size = new System.Drawing.Size(320, 10);
+            this.txtWarning.TabIndex = 32;
+            this.txtWarning.Text = "PLEASE SEE TOMASZ FOR THESE PRICES";
+            this.txtWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtWarning.Visible = false;
+            // 
             // label7
             // 
-            this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(54, 24);
             this.label7.Name = "label7";
@@ -417,7 +422,6 @@
             // 
             // label8
             // 
-            this.label8.Enabled = false;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(172, 24);
             this.label8.Name = "label8";
@@ -529,24 +533,13 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // txtWarning
-            // 
-            this.txtWarning.BackColor = System.Drawing.Color.Transparent;
-            this.txtWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWarning.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtWarning.Location = new System.Drawing.Point(6, 24);
-            this.txtWarning.Name = "txtWarning";
-            this.txtWarning.Size = new System.Drawing.Size(320, 98);
-            this.txtWarning.TabIndex = 32;
-            this.txtWarning.Text = "PLEASE SEE TOMASZ FOR THESE PRICES";
-            this.txtWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // frmTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(355, 860);
             this.ControlBox = false;
+            this.Controls.Add(this.txtWarning);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox4);
