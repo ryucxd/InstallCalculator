@@ -38,15 +38,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtDoubleIncludingSR1AndSR2WithPanel = new System.Windows.Forms.TextBox();
             this.txtSingleIncludingSR1AndSR2WithPanel = new System.Windows.Forms.TextBox();
-            this.txtDoubleSR3AndSR3WithPanels = new System.Windows.Forms.TextBox();
-            this.txtSingleSR3AndSR3WithPanels = new System.Windows.Forms.TextBox();
+            this.txtDoubleSR4 = new System.Windows.Forms.TextBox();
+            this.txtSingleSR4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDoubleIncludingSR1andSr2Total = new System.Windows.Forms.TextBox();
             this.txtSingleIncludingSR1AndSR2WithPanelTotal = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtSingleSR3AndSR3WithPanelsTotal = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtDoubleSR3AndSR3WithPanelsTotal = new System.Windows.Forms.TextBox();
+            this.txtSingleSR4Total = new System.Windows.Forms.TextBox();
             this.grpTravel = new System.Windows.Forms.GroupBox();
             this.radioOver2Hours = new System.Windows.Forms.RadioButton();
             this.radioUpTo2hours = new System.Windows.Forms.RadioButton();
@@ -60,7 +58,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.txtDoubleIncludingSR1AndSR2WithPanelTotal = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtWarning = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -72,12 +69,22 @@
             this.txtPanelTotal = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtSingleSR3Flood = new System.Windows.Forms.TextBox();
+            this.txtDoubleSR3Flood = new System.Windows.Forms.TextBox();
+            this.txtSingleDoubleSR3FloodTotal = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.grpTravel.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtSingleInludingSR1andSR2
@@ -132,7 +139,7 @@
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalculate.Location = new System.Drawing.Point(186, 822);
+            this.btnCalculate.Location = new System.Drawing.Point(186, 917);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(99, 28);
             this.btnCalculate.TabIndex = 7;
@@ -170,25 +177,27 @@
             this.txtSingleIncludingSR1AndSR2WithPanel.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSingleIncludingSR1AndSR2WithPanel_KeyDown);
             this.txtSingleIncludingSR1AndSR2WithPanel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSingleIncludingSR1AndSR2WithPanel_KeyPress);
             // 
-            // txtDoubleSR3AndSR3WithPanels
+            // txtDoubleSR4
             // 
-            this.txtDoubleSR3AndSR3WithPanels.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoubleSR3AndSR3WithPanels.Location = new System.Drawing.Point(172, 46);
-            this.txtDoubleSR3AndSR3WithPanels.Name = "txtDoubleSR3AndSR3WithPanels";
-            this.txtDoubleSR3AndSR3WithPanels.Size = new System.Drawing.Size(100, 22);
-            this.txtDoubleSR3AndSR3WithPanels.TabIndex = 6;
-            this.txtDoubleSR3AndSR3WithPanels.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDoubleSR3AndSR3WithPanels_KeyDown);
-            this.txtDoubleSR3AndSR3WithPanels.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDoubleSR3AndSR3WithPanels_KeyPress);
+            this.txtDoubleSR4.Enabled = false;
+            this.txtDoubleSR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDoubleSR4.Location = new System.Drawing.Point(172, 46);
+            this.txtDoubleSR4.Name = "txtDoubleSR4";
+            this.txtDoubleSR4.Size = new System.Drawing.Size(100, 22);
+            this.txtDoubleSR4.TabIndex = 6;
+            this.txtDoubleSR4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDoubleSR3AndSR3WithPanels_KeyDown);
+            this.txtDoubleSR4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDoubleSR3AndSR3WithPanels_KeyPress);
             // 
-            // txtSingleSR3AndSR3WithPanels
+            // txtSingleSR4
             // 
-            this.txtSingleSR3AndSR3WithPanels.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSingleSR3AndSR3WithPanels.Location = new System.Drawing.Point(54, 46);
-            this.txtSingleSR3AndSR3WithPanels.Name = "txtSingleSR3AndSR3WithPanels";
-            this.txtSingleSR3AndSR3WithPanels.Size = new System.Drawing.Size(100, 22);
-            this.txtSingleSR3AndSR3WithPanels.TabIndex = 5;
-            this.txtSingleSR3AndSR3WithPanels.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSingleSR3AndSR3WithPanels_KeyDown);
-            this.txtSingleSR3AndSR3WithPanels.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSingleSR3AndSR3WithPanels_KeyPress);
+            this.txtSingleSR4.Enabled = false;
+            this.txtSingleSR4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSingleSR4.Location = new System.Drawing.Point(54, 46);
+            this.txtSingleSR4.Name = "txtSingleSR4";
+            this.txtSingleSR4.Size = new System.Drawing.Size(100, 22);
+            this.txtSingleSR4.TabIndex = 5;
+            this.txtSingleSR4.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSingleSR3AndSR3WithPanels_KeyDown);
+            this.txtSingleSR4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSingleSR3AndSR3WithPanels_KeyPress);
             // 
             // label4
             // 
@@ -221,47 +230,28 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(54, 69);
+            this.label11.Location = new System.Drawing.Point(113, 69);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(100, 13);
             this.label11.TabIndex = 27;
             this.label11.Text = "TOTAL";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtSingleSR3AndSR3WithPanelsTotal
+            // txtSingleSR4Total
             // 
-            this.txtSingleSR3AndSR3WithPanelsTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSingleSR3AndSR3WithPanelsTotal.Location = new System.Drawing.Point(54, 85);
-            this.txtSingleSR3AndSR3WithPanelsTotal.Name = "txtSingleSR3AndSR3WithPanelsTotal";
-            this.txtSingleSR3AndSR3WithPanelsTotal.ReadOnly = true;
-            this.txtSingleSR3AndSR3WithPanelsTotal.Size = new System.Drawing.Size(100, 22);
-            this.txtSingleSR3AndSR3WithPanelsTotal.TabIndex = 12;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(172, 69);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(100, 13);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "TOTAL";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtDoubleSR3AndSR3WithPanelsTotal
-            // 
-            this.txtDoubleSR3AndSR3WithPanelsTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDoubleSR3AndSR3WithPanelsTotal.Location = new System.Drawing.Point(172, 85);
-            this.txtDoubleSR3AndSR3WithPanelsTotal.Name = "txtDoubleSR3AndSR3WithPanelsTotal";
-            this.txtDoubleSR3AndSR3WithPanelsTotal.ReadOnly = true;
-            this.txtDoubleSR3AndSR3WithPanelsTotal.Size = new System.Drawing.Size(100, 22);
-            this.txtDoubleSR3AndSR3WithPanelsTotal.TabIndex = 13;
+            this.txtSingleSR4Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSingleSR4Total.Location = new System.Drawing.Point(113, 85);
+            this.txtSingleSR4Total.Name = "txtSingleSR4Total";
+            this.txtSingleSR4Total.ReadOnly = true;
+            this.txtSingleSR4Total.Size = new System.Drawing.Size(100, 22);
+            this.txtSingleSR4Total.TabIndex = 12;
             // 
             // grpTravel
             // 
             this.grpTravel.Controls.Add(this.radioOver2Hours);
             this.grpTravel.Controls.Add(this.radioUpTo2hours);
             this.grpTravel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpTravel.Location = new System.Drawing.Point(18, 148);
+            this.grpTravel.Location = new System.Drawing.Point(18, 138);
             this.grpTravel.Name = "grpTravel";
             this.grpTravel.Size = new System.Drawing.Size(320, 50);
             this.grpTravel.TabIndex = 30;
@@ -296,7 +286,7 @@
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(109, 765);
+            this.label13.Location = new System.Drawing.Point(109, 860);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(125, 21);
             this.label13.TabIndex = 32;
@@ -306,7 +296,7 @@
             // txtTotal
             // 
             this.txtTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTotal.Location = new System.Drawing.Point(112, 789);
+            this.txtTotal.Location = new System.Drawing.Point(112, 884);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
             this.txtTotal.Size = new System.Drawing.Size(122, 24);
@@ -323,7 +313,7 @@
             this.groupBox1.Controls.Add(this.txtSingleIncludingSR1AndSR2WithPanelTotal);
             this.groupBox1.Controls.Add(this.txtDoubleIncludingSR1AndSR2WithPanelTotal);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 480);
+            this.groupBox1.Location = new System.Drawing.Point(12, 470);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(326, 125);
             this.groupBox1.TabIndex = 33;
@@ -381,34 +371,20 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label18);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.txtSingleSR3AndSR3WithPanels);
-            this.groupBox2.Controls.Add(this.txtDoubleSR3AndSR3WithPanels);
-            this.groupBox2.Controls.Add(this.txtSingleSR3AndSR3WithPanelsTotal);
-            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Controls.Add(this.txtSingleSR4);
+            this.groupBox2.Controls.Add(this.txtDoubleSR4);
+            this.groupBox2.Controls.Add(this.txtSingleSR4Total);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.txtDoubleSR3AndSR3WithPanelsTotal);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 630);
+            this.groupBox2.Location = new System.Drawing.Point(12, 731);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(326, 125);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "SR3 / SR4 / FLOOD";
-            // 
-            // txtWarning
-            // 
-            this.txtWarning.BackColor = System.Drawing.Color.Transparent;
-            this.txtWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWarning.ForeColor = System.Drawing.Color.DarkRed;
-            this.txtWarning.Location = new System.Drawing.Point(23, 608);
-            this.txtWarning.Name = "txtWarning";
-            this.txtWarning.Size = new System.Drawing.Size(320, 10);
-            this.txtWarning.TabIndex = 32;
-            this.txtWarning.Text = "PLEASE SEE TOMASZ FOR THESE PRICES";
-            this.txtWarning.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txtWarning.Visible = false;
+            this.groupBox2.Text = "SR4";
             // 
             // label7
             // 
@@ -441,7 +417,7 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.txtSingleIncludingSR1andSr2Total);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(18, 209);
+            this.groupBox3.Location = new System.Drawing.Point(18, 199);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(320, 125);
             this.groupBox3.TabIndex = 35;
@@ -451,7 +427,7 @@
             // btnClose
             // 
             this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClose.Location = new System.Drawing.Point(58, 822);
+            this.btnClose.Location = new System.Drawing.Point(58, 917);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(99, 28);
             this.btnClose.TabIndex = 36;
@@ -466,7 +442,7 @@
             this.groupBox4.Controls.Add(this.label17);
             this.groupBox4.Controls.Add(this.txtPanelTotal);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(18, 340);
+            this.groupBox4.Location = new System.Drawing.Point(18, 330);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(320, 125);
             this.groupBox4.TabIndex = 36;
@@ -516,7 +492,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::InstallCalculator.Properties.Resources.logo_no_background__1_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(70, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(70, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(215, 101);
             this.pictureBox1.TabIndex = 37;
@@ -525,7 +501,7 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(128, 119);
+            this.btnReset.Location = new System.Drawing.Point(128, 109);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(99, 28);
             this.btnReset.TabIndex = 38;
@@ -533,13 +509,111 @@
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.label15);
+            this.groupBox5.Controls.Add(this.label16);
+            this.groupBox5.Controls.Add(this.txtSingleSR3Flood);
+            this.groupBox5.Controls.Add(this.txtDoubleSR3Flood);
+            this.groupBox5.Controls.Add(this.txtSingleDoubleSR3FloodTotal);
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Location = new System.Drawing.Point(14, 600);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(326, 125);
+            this.groupBox5.TabIndex = 39;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "SR3 / FLOOD";
+            // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(54, 24);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(100, 19);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Single including SR1 and SR2";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(172, 24);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(100, 19);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Double including SR1 and SR2";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSingleSR3Flood
+            // 
+            this.txtSingleSR3Flood.Enabled = false;
+            this.txtSingleSR3Flood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSingleSR3Flood.Location = new System.Drawing.Point(54, 46);
+            this.txtSingleSR3Flood.Name = "txtSingleSR3Flood";
+            this.txtSingleSR3Flood.Size = new System.Drawing.Size(100, 22);
+            this.txtSingleSR3Flood.TabIndex = 5;
+            this.txtSingleSR3Flood.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSingleSR3Flood_KeyDown);
+            this.txtSingleSR3Flood.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSingleSR3Flood_KeyPress);
+            // 
+            // txtDoubleSR3Flood
+            // 
+            this.txtDoubleSR3Flood.Enabled = false;
+            this.txtDoubleSR3Flood.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDoubleSR3Flood.Location = new System.Drawing.Point(172, 46);
+            this.txtDoubleSR3Flood.Name = "txtDoubleSR3Flood";
+            this.txtDoubleSR3Flood.Size = new System.Drawing.Size(100, 22);
+            this.txtDoubleSR3Flood.TabIndex = 6;
+            this.txtDoubleSR3Flood.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDoubleSR3Flood_KeyDown);
+            this.txtDoubleSR3Flood.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDoubleSR3Flood_KeyPress);
+            // 
+            // txtSingleDoubleSR3FloodTotal
+            // 
+            this.txtSingleDoubleSR3FloodTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSingleDoubleSR3FloodTotal.Location = new System.Drawing.Point(113, 85);
+            this.txtSingleDoubleSR3FloodTotal.Name = "txtSingleDoubleSR3FloodTotal";
+            this.txtSingleDoubleSR3FloodTotal.ReadOnly = true;
+            this.txtSingleDoubleSR3FloodTotal.Size = new System.Drawing.Size(100, 22);
+            this.txtSingleDoubleSR3FloodTotal.TabIndex = 12;
+            // 
+            // label19
+            // 
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(113, 69);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(100, 13);
+            this.label19.TabIndex = 27;
+            this.label19.Text = "TOTAL";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.label12.Location = new System.Drawing.Point(6, 20);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(307, 98);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "PLEASE SEE TOMASZ";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.ForeColor = System.Drawing.Color.PaleVioletRed;
+            this.label18.Location = new System.Drawing.Point(6, 20);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(307, 98);
+            this.label18.TabIndex = 33;
+            this.label18.Text = "PLEASE SEE TOMASZ";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 860);
+            this.ClientSize = new System.Drawing.Size(355, 949);
             this.ControlBox = false;
-            this.Controls.Add(this.txtWarning);
+            this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox4);
@@ -567,6 +641,8 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -583,15 +659,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtDoubleIncludingSR1AndSR2WithPanel;
         private System.Windows.Forms.TextBox txtSingleIncludingSR1AndSR2WithPanel;
-        private System.Windows.Forms.TextBox txtDoubleSR3AndSR3WithPanels;
-        private System.Windows.Forms.TextBox txtSingleSR3AndSR3WithPanels;
+        private System.Windows.Forms.TextBox txtDoubleSR4;
+        private System.Windows.Forms.TextBox txtSingleSR4;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDoubleIncludingSR1andSr2Total;
         private System.Windows.Forms.TextBox txtSingleIncludingSR1AndSR2WithPanelTotal;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox txtSingleSR3AndSR3WithPanelsTotal;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtDoubleSR3AndSR3WithPanelsTotal;
+        private System.Windows.Forms.TextBox txtSingleSR4Total;
         private System.Windows.Forms.GroupBox grpTravel;
         private System.Windows.Forms.RadioButton radioOver2Hours;
         private System.Windows.Forms.RadioButton radioUpTo2hours;
@@ -616,7 +690,15 @@
         private System.Windows.Forms.TextBox txtPanelTotal;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Label txtWarning;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtSingleSR3Flood;
+        private System.Windows.Forms.TextBox txtDoubleSR3Flood;
+        private System.Windows.Forms.TextBox txtSingleDoubleSR3FloodTotal;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label18;
     }
 }
 
